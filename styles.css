@@ -1,0 +1,10 @@
+body{
+    background-color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blanchedalmond;
+    text-align: left;
+}
+h1{
+    text-shadow: 5px;
+    text-align: center;
+}
