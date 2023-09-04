@@ -1,28 +1,46 @@
+
+/* non text content */
 figure{
-    color: aquamarine;
+    color: black;
+}
+img{
+    border: solid black 10px;
+    padding: 10px;
+    
 }
 
+/* Text and coloring*/
 body{
-    background-color: rgb(34, 9, 1);
+    background: url(images/stairs.jpg);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     border: 5px;
     border-color: rgb(246, 170, 28);
-}
-h1{
-    background-color:rgb(98, 23, 8);
-    color: rgb(188, 57, 8);
-
-}
-h2{
-    background-color: rgb(98, 23, 8);
-    color: rgb(188, 57, 8);
-}
-p{
-    background-color: rgb(98, 23, 8);
-    color: rgb(188, 57, 8);
+    color: rgb(#9CFB5D);
 }
 
 #content{
-    background-color: color(srgb red green blue);
+    background-color: rgb(39, 101, 39);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
 }
+
+p{
+    background-color: olive;
+}
+
+table,tr,td,th{
+    color: lightblue;
+    background-color: royalblue;
+    border: 10px;
+}
+
+/*links */
+ a:hover{
+    color: chocolate;
+ }
+ a{
+    text-decoration: none;
+ }

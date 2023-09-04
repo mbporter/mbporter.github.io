@@ -8,3 +8,12 @@ h1{
     text-shadow: 5px;
     text-align: center;
 }
+#content{
+    background-color: cadetblue;
+}
+a:hover{
+    color: aqua;
+ }
+ a{
+    text-decoration: none;
+ }
