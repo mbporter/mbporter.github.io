@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    text-align: center;
 }
 
 #main-header{
@@ -35,12 +36,24 @@ background-color: darkcyan;
 background-color: lightgreen;
 }
 
-#top{
-    color: crimson;
+.top{
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    text-align: left;
+    
 }
-
-#bot{
-    color: darkmagenta;
+.space{
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+}
+.bot{
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    
+    
 }
 /* clumn 1 of 2 display*/
 .col1of2{
@@ -61,19 +74,23 @@ background-color: lightgreen;
 
 #main-nav a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #main-nav a:hover{
     border-bottom: 2px solid green;
     
 }
-
+/* main content*/
+.nestcol{
+    background-color: lightseagreen;
+    display: inline-block;
+}
 /*typeogphy*/
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    
 }
 
 /* larger res */
