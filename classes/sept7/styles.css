@@ -5,6 +5,14 @@
 body{
 
 }
+
+table{
+    background-color: lightgray;
+    
+}
+ul{
+    text-align: left;
+}
 #main-foot{
     background-color: maroon;
     margin: auto;

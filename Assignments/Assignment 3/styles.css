@@ -1,66 +1,35 @@
+/* main areas */
+
 body{
     background-color: white;
     text-align: center;
-    display: block;
+    margin: 30px;
+
+   display: flexbox;
+   align-self: auto;
+    
+
 }
 
 #main-header{
-
+    display: block;
 }
 
 #main-content{
-background-color: lightblue;
+
+margin: auto;
+padding: 10px;
 }
 
 #main-footer{
 background-color: grey;
 }
 
+/*general classes*/
+ 
 .padded-area{
     padding: 7px;
     margin: auto;
-
-}
-
-.info {
-    border: 2px solid darkblue;
-
-}
-.info header{
-background-color: darkcyan;
-
-}
-
-/*upper part of page*/
-
-.upper{
-background-color: lightblue;
-display: inline-block;
-margin: auto;
-}
-
-.top{
-    color: black;
-    display: inline-block;
-    padding: 5px;
-    text-align: left;
-    
-}
-.space{
-    background-color: white;
-    display: inline-block;
-    padding: 10px;
-}
-.bot{
-    color: black;
-    display: inline-block;
-    padding: 5px;
-    
-    
-}
-/* clumn 1 of 2 display*/
-.col1of2{
-    background-color: lightgreen;
 
 }
 
@@ -68,11 +37,14 @@ margin: auto;
 
 #main-nav ul{
     background-color: grey;
+    display: flex;
 }
 
 #main-nav li{
     list-style-type: none;
    /* display: inline-block; */
+   margin: auto;
+   
 }
 
 #main-nav a{
@@ -84,11 +56,76 @@ margin: auto;
     border-bottom: 2px solid green;
     
 }
+/*upper part of page*/
+
+.upper{ /* main content and side bar*/
+    background-color: lightcoral;
+    display: flex;
+    margin: auto;
+    
+}
+
+.top{ /* mian content*/
+    color: black;
+    display: flexbox;
+    padding: 5px;
+    text-align: left;
+    float: left;
+}
+
+.bot{/* side bar*/
+    color: black;
+    display: flexbox;
+    padding: 5px;
+    margin: auto;
+   float: right;
+}
+
+/* NEXT PART COLUMS AREA*/
+
+.columns{
+    margin: auto;
+    padding: 5px;
+   
+}
+.nestcol{/*DONT CHANGE ITS PERFECT AS IT IS*/
+    border: 2px solid blue;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    color: white;
+}
+.col-text{/*COL 1 OF 2 STUFF*/
+    text-align: left;
+}
+
+
+.info-col1of2{
+    background-color: lightgreen;
+    border: 5px solid darkcyan;
+    padding: 10px;
+    margin: auto;
+}
+
+
+
 /* main content*/
 .nestcol{
     background-color: lightseagreen;
-    display: inline-block;
+    display:inline-block;
+   
 }
+/* footer information*/
+footer{
+    color: white;
+    text-align: center;
+}
+#adress{
+    color: white;
+    text-align: bottom right;
+
+}
+
 /*typeogphy*/
 
 body{
@@ -98,6 +135,7 @@ body{
 /*images*/
 image{
     padding: 20px;
+    display: flex;
 }
 
 /* larger res */
@@ -116,6 +154,9 @@ image{
     .top{
         display: flex;
         flex: 1;
+    }
+    #footer{
+        flex: auto;
     }
 
     .col1of2{
