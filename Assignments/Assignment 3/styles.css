@@ -33,8 +33,10 @@ background-color: darkcyan;
 
 /*upper part of page*/
 
-#upper{
-background-color: lightgreen;
+.upper{
+background-color: lightblue;
+display: inline-block;
+margin: auto;
 }
 
 .top{
@@ -112,6 +114,7 @@ image{
         display: flex;
     }
     .top{
+        display: flex;
         flex: 1;
     }
 
