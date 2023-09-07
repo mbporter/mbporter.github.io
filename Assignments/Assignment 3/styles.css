@@ -1,17 +1,17 @@
 body{
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 #main-header{
-background-color: aqua;
+
 }
 
 #main-content{
-background-color: aquamarine;
+background-color: lightblue;
 }
 
 #main-footer{
-background-color: turquoise;
+background-color: grey;
 }
 
 .padded-area{
@@ -21,7 +21,7 @@ background-color: turquoise;
 }
 
 .info {
-    border: 3px solid lightcoral;
+    border: 2px solid darkblue;
 
 }
 .info header{
@@ -41,6 +41,11 @@ background-color: lightgreen;
 
 #bot{
     color: darkmagenta;
+}
+/* clumn 1 of 2 display*/
+.col1of2{
+    background-color: lightgreen;
+
 }
 
 /*main nav*/
@@ -83,6 +88,9 @@ body{
     }
     .upper{
         display: flex;
+    }
+    .top{
+        flex: 1;
     }
 
     .col1of2{
