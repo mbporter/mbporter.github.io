@@ -4,20 +4,13 @@ body{
     background-color: white;
     text-align: center;
     margin: 30px;
-
-   display: flexbox;
-   align-self: auto;
-    
-
 }
 
 #main-header{
-    display: block;
+    
 }
 
 #main-content{
-
-margin: auto;
 padding: 10px;
 }
 
@@ -60,26 +53,31 @@ background-color: grey;
 
 .upper{ /* main content and side bar*/
     background-color: lightcoral;
-    display: flex;
-    margin: auto;
     
 }
 
-.top{ /* mian content*/
+/*main content*/
+ .top{ 
     color: black;
-    display: flexbox;
     padding: 5px;
     text-align: left;
-    float: left;
-}
+    border: 2px solid orange;
 
-.bot{/* side bar*/
+}
+#main-con{
+    display: inline;
+}
+#main-con-text{
+
+}
+/* side bar*/
+ .bot{
     color: black;
-    display: flexbox;
     padding: 5px;
     margin: auto;
-   float: right;
-}
+   border: 2px solid purple;
+}  
+
 
 /* NEXT PART COLUMS AREA*/
 
@@ -134,9 +132,29 @@ body{
 }
 /*images*/
 image{
-    padding: 20px;
-    display: flex;
+    margin: auto;
+    padding: auto;
+    display: block;
 }
+
+
+
+
+#test{
+    background-color: aqua;
+    display: block;
+   
+}
+
+
+
+
+
+
+
+
+
+
 
 /* larger res */
 
