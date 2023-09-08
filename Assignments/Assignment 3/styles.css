@@ -45,10 +45,6 @@ background-color: grey;
 /*upper part of page*/
 
 
-
-
-
-
 .upper{ /* main content and side bar*/
     
     column-gap: 20px;
@@ -72,9 +68,7 @@ background-color: grey;
 #main-con{
     display: inline;
 }
-#main-con-text{
 
-}
 /* side bar*/
  .bot{
     text-align: left;
