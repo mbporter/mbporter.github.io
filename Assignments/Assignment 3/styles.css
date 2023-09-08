@@ -11,7 +11,7 @@ body{
 }
 
 #main-content{
-padding: 10px;
+
 }
 
 #main-footer{
@@ -51,9 +51,19 @@ background-color: grey;
 }
 /*upper part of page*/
 
+
+
+
+
+
 .upper{ /* main content and side bar*/
-    background-color: lightcoral;
     
+    column-gap: 20px;
+    
+}
+
+.main-content-test{
+    display: block;
 }
 
 /*main content*/
@@ -62,6 +72,8 @@ background-color: grey;
     padding: 5px;
     text-align: left;
     border: 2px solid orange;
+    width: 60%;
+    background-color: aquamarine;
 
 }
 #main-con{
@@ -72,16 +84,20 @@ background-color: grey;
 }
 /* side bar*/
  .bot{
+    text-align: left;
+    background-color: blue;
     color: black;
     padding: 5px;
     margin: auto;
    border: 2px solid purple;
+   width: 30%;
 }  
 
 
 /* NEXT PART COLUMS AREA*/
 
 .columns{
+    background-color: aqua;
     margin: auto;
     padding: 5px;
    
@@ -103,8 +119,18 @@ background-color: grey;
     border: 5px solid darkcyan;
     padding: 10px;
     margin: auto;
+    text-align: left;
 }
 
+#main-poop{
+    column-width: 70%;
+    width: 70%;`
+}
+
+#side-poop{
+    width: 40%;
+    display: flex;
+}
 
 
 /* main content*/
@@ -140,13 +166,6 @@ image{
 
 
 
-#test{
-    background-color: aqua;
-    display: block;
-   
-}
-
-
 
 
 
@@ -162,7 +181,10 @@ image{
     #main-nav li{
        display: inline-block;
     }
-
+ 
+    .flex-container{
+        display: flex;
+    }
     .columns{
         display: flex;
     }
