@@ -6,13 +6,6 @@ body{
     margin: 30px;
 }
 
-#main-header{
-    
-}
-
-#main-content{
-
-}
 
 #main-footer{
 background-color: grey;
@@ -122,15 +115,7 @@ background-color: grey;
     text-align: left;
 }
 
-#main-poop{
-    column-width: 70%;
-    width: 70%;`
-}
 
-#side-poop{
-    width: 40%;
-    display: flex;
-}
 
 
 /* main content*/
@@ -164,17 +149,6 @@ image{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* larger res */
 
 @media only screen and (min-width: 600px) {
@@ -193,7 +167,7 @@ image{
     }
     .top{
         display: flex;
-        flex: 1;
+      
     }
     #footer{
         flex: auto;
