@@ -52,3 +52,47 @@ display: flex;
     display: block;
 
 }
+
+/* sections*/
+
+/*1*/
+
+#sec-1{
+    background-color: #FFFFFF;
+}
+/*2*/
+#sec-2{
+    background-color: #73000A;
+}
+/*3*/
+#sec-3{
+    background-color: black;
+}
+/*4*/
+#sec-4{
+    background-color: #ECECEC;
+}
+/*5*/
+#sec-5{
+    background-color: #FFFFFF;
+}
+/*6*/
+#sec-6{
+    background-color: #570008;
+}
+/*7*/
+#sec-7{
+    background-color: #ECECEC;
+}
+/*8*/
+#sec-8{
+    background-color: #1F414D;
+}
+/*9*/
+#sec-9{
+    background-image: url(images/back.gif);
+}
+/*10*/
+#sec-10{
+    background-color: #ECECEC;
+}
