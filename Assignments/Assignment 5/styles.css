@@ -1,14 +1,25 @@
+/* Written by McKinnon Porter, i know it is very messy and i could have made a class for a lot of this but by the time i relized that it was already too late , hope thats ok i know for next time*/
+
 body    {
     background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header edits*/
 
 #main-header{
     background-color: black;
-    
   color: aliceblue  ;
-  display: flex;
+  display: block;
+  
+}
+#main-header ul{
+    display: flex;
+    text-align: right;
+}
+#main-heder img{
+    align-items: baseline;
+    display: block;
 }
 
 #main-nav{
@@ -52,6 +63,11 @@ display: flex;
     display: block;
 
 }
+#under-nav a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
 
 /* sections*/
 
@@ -59,40 +75,198 @@ display: flex;
 
 #sec-1{
     background-color: #FFFFFF;
+    color: black;
+    margin-top: -24;
+}
+#sec-1 h1{
+    color: white;
+    background-color: #73000A;
+    margin-top: -24px;
+    
+}
+#sec-1 p, #sec-1 h3{
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    
+}
+#sec-1 img{
+    background-size: cover;
 }
 /*2*/
 #sec-2{
     background-color: #73000A;
+    color: white;
+    display: flex;
+}
+#sec-2 h1,#sec-2 p{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: auto;
+  
+}
+#sec-2 img{
+ margin-right: 50%;
+ display: block;
+}
+#sec-2 h1,#sec-1 p{
+    margin-left: auto;
+    
 }
 /*3*/
 #sec-3{
     background-color: black;
+    color: white;
+    display: flex;
+}
+#sec-3 img{
+    
+    display: block;
+}
+#sec-3 h1,#sec-3 p, #sec-3 a{
+    /* text-align: center;
+    justify-content: center; */
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 30px;
+   
+}
+#sec-3 a, #sec-4 a,#sec-6 a,#sec-7 a,#sec-8 a,#sec-10 a{
+    text-decoration: none;
+    color: white;
+    border: white soild 3px;
+    background-color: #570008;
+    padding: 10px;
+}
+#sec-3 a:hover, #sec-4 a:hover,#sec-6 a:hover,#sec-7 a:hover,#sec-8 a:hover,#sec-10 a:hover{
+    background-color: white;
+    color: #570008;
+    border: #570008 solid 3px;
 }
 /*4*/
 #sec-4{
     background-color: #ECECEC;
+    color: #73000A;
+    display: flex;
+}
+#sec-4 h1,#sec-4 p, #sec-4 a{
+    /* text-align: center;
+    justify-content: center; */
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 30px;
+   
+}
+#sec-4 img{
+    display: block;
 }
 /*5*/
 #sec-5{
     background-color: #FFFFFF;
+    color: #73000A;
+    display: flex;
+}
+#sec-5-1,#sec-5-2,#sec-5-3,#sec-5-4{
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+#sec-5-1 img,#sec-5-2 img,#sec-5-3 img #sec-5-4 img{
+display: block;
 }
 /*6*/
 #sec-6{
     background-color: #570008;
+    color: white;
+    display: flex;
+}
+
+#sec-6 img{
+    
+    display: block;
+}
+#sec-6 h1,#sec-6 p, #sec-6 a{
+   
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 30px;
+   
 }
 /*7*/
 #sec-7{
     background-color: #ECECEC;
+    color: #73000A;
+    display: flex;
+}
+
+#sec-7 img{
+    display: block;
+    
+}
+#sec-7 h1,#sec-7 p, #sec-7 a{
+    
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 30px;
+   
 }
 /*8*/
 #sec-8{
     background-color: #1F414D;
+    color: white;
+    display: flex;
+}
+#sec-8 img{
+    display: block;
+    
+}
+#sec-8 h1,#sec-8 p, #sec-8 a{
+    
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 30px;
+   
 }
 /*9*/
 #sec-9{
     background-image: url(images/back.gif);
+    color: white;
 }
 /*10*/
 #sec-10{
     background-color: #ECECEC;
+    color: #73000A;
+    display: flex;
+}
+#sec-10 img{
+    display: block;
+    
+}
+#sec-10 h1,#sec-10 p, #sec-10 a, #sec-10 ul, #sec-10 li{
+    
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 30px;
+   
 }
