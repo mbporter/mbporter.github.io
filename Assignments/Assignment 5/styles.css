@@ -1,0 +1,54 @@
+body    {
+    background-color: aliceblue;
+}
+
+/* header edits*/
+
+#main-header{
+    background-color: black;
+    
+  color: aliceblue  ;
+  display: flex;
+}
+
+#main-nav{
+   margin: auto;
+display: flex;
+   
+
+}
+
+#main-nav ul{
+    padding: 10px;
+    list-style-type: none;
+  
+}
+
+#main-nav li{
+    padding: 10px;
+    list-style-type: none;
+}
+#main-nav a{
+    text-decoration: none;
+}
+
+#main-nav a :hover{
+    color: red;
+}
+
+#under-nav{
+    background-color: #73000A;
+    display: flex;
+    margin: auto;
+}
+#under-nav table{
+    margin: auto;
+    display: block;
+    padding: 10px;
+    
+}
+#under-nav tr{
+    margin: auto;
+    display: block;
+
+}
