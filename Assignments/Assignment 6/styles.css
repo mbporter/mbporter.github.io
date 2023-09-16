@@ -1,0 +1,43 @@
+body{
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+#text{
+    background-color: bisque;
+}
+
+#main{
+    display: flex;
+    border: 5px solid royalblue;
+}
+
+#hide-show{
+    background-color: lightcoral;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    border: 5px solid royalblue;
+
+}
+.hide{
+    display: none;
+}
+
+#dance{
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    border: 5px solid royalblue;
+
+}
+
+#imput{
+    background-color: lightgreen;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    border: 5px solid royalblue;
+
+}
