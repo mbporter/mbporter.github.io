@@ -3,20 +3,33 @@ body{
     text-align: center;
 }
 
-#text{
-    background-color: bisque;
+header{
+    margin: auto;
+    padding: 10px;
+    border: 10px soild cornflowerblue;
+    background-color: blanchedalmond;
 }
 
 #main{
     display: flex;
     border: 5px solid royalblue;
+
+}
+
+
+.space{
+    padding: 70px;
+}
+
+.flex{
+    margin: 10px;
+    padding: 20px;
+    /*display: table-column;*/
+    text-align: center;
 }
 
 #hide-show{
     background-color: lightcoral;
-    padding: 10px;
-    margin: auto;
-    display: block;
     border: 5px solid royalblue;
 
 }
@@ -26,18 +39,54 @@ body{
 
 #dance{
     background-color: lightgoldenrodyellow;
-    padding: 10px;
-    margin: auto;
-    display: block;
     border: 5px solid royalblue;
 
 }
 
 #imput{
     background-color: lightgreen;
-    padding: 10px;
-    margin: auto;
-    display: block;
     border: 5px solid royalblue;
 
+}
+ul{
+    list-style: none;
+}
+
+#square{
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.anna{
+    position: relative;
+    animation-name: anim-square;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+footer{
+    background-color: blanchedalmond;
+}
+
+@keyframes anim-square {
+    0%{
+background-color: red;
+top: 0px;
+    }
+    25%{
+background-color: orange;
+    }
+    50%{
+background-color: yellow;
+top: 100px;
+    }
+    75%{
+background-color: green;
+    }
+    100%{
+background-color: blue;
+top: 0px;
+    }
 }

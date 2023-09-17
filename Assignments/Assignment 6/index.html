@@ -8,25 +8,60 @@
 
 <body>
 
-<h1 id="text">intro to javascript</h1>
+<header><h1>intro to javascript</h1></header>
 <div id="main">
 
-    <div id="hide-show"> 
+    <div id="hide-show" class="flex"> 
         <h1>Hide and Seek</h1>
+        <section class="space">
         <button id="button-show">show</button>
         <button id="button-hide">hide</button>
         <img id="otter" src="images/lil guy.jpg" class="hide">
+        </section>
     </div>
 
-    <div id="dance">
+    <div id="dance" class="flex">
         <h1>Animate</h1>
-        <button id="button">DANCE</button>
-        <div id="square" class="anna">just test</div>
-
+        <section class="space">
+        <button id="button-move">DANCE</button>
+        <div id="square" >just test</div>
+        </section>
     </div>
 
-    <div id="imput">
+    <div id="imput" class="flex">
         <h1>Imput</h1>
+        <section class="space">
+        <ul>
+            <li>
+                <label for="product">Product Name:</label>
+                <input type="text" id="product">
+            </li>
+            <li>
+                <label for="comment">Comment:</label>
+                <input type="text" id="comment">
+            </li>
+            <li>
+                <label for="rate">Rating:</label>
+                <input type="text" id="rate">
+            </li>
+            <li>
+                <label for="user">Username:</label>
+                <input type="text" id="user">
+            </li>
+                <li><button id="add">Add Comment</button>
+            </li>
+        </ul>
+        <!--<label for="product">Product Name:</label>
+        <input type="text" id="product">
+        <label for="comment">Comment:</label>
+        <input type="text" id="comment">
+        <label for="rate">Rating:</label>
+        <input type="text" id="rate">
+        <label for="user">Username:</label>
+        <input type="text" id="user">
+        <button id="add">Add Comment</button>
+        -->
+        </section>
     </div>
 
 </div>
