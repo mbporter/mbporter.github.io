@@ -24,7 +24,6 @@ header{
 .flex{
     margin: 10px;
     padding: 20px;
-    /*display: table-column;*/
     text-align: center;
 }
 
@@ -89,4 +88,20 @@ background-color: green;
 background-color: blue;
 top: 0px;
     }
+}
+@media only screen and (min-width: 600px) {
+    .flex{
+        flex: 1;
+        
+    }
+    .flex-cont{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .flex{
+        flex: 1;
+    }
+
+
 }
