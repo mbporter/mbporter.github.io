@@ -11,7 +11,7 @@ header{
 }
 
 #main{
-    display: flex;
+    
     border: 5px solid royalblue;
 
 }
@@ -25,6 +25,7 @@ header{
     margin: 10px;
     padding: 20px;
     text-align: center;
+    flex: 1;
 }
 
 #hide-show{
@@ -90,18 +91,12 @@ top: 0px;
     }
 }
 @media only screen and (min-width: 600px) {
-    .flex{
-        flex: 1;
-        
-    }
     .flex-cont{
         display: flex;
     }
-}
-@media only screen and (max-width: 600px) {
+    
     .flex{
         flex: 1;
     }
-
-
+    
 }
