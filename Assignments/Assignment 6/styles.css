@@ -1,0 +1,102 @@
+body{
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+header{
+    margin: auto;
+    padding: 10px;
+    border: 10px soild cornflowerblue;
+    background-color: blanchedalmond;
+}
+
+#main{
+    
+    border: 5px solid royalblue;
+
+}
+
+
+.space{
+    padding: 70px;
+}
+
+.flex{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+#hide-show{
+    background-color: lightcoral;
+    border: 5px solid royalblue;
+
+}
+.hide{
+    display: none;
+}
+
+#dance{
+    background-color: lightgoldenrodyellow;
+    border: 5px solid royalblue;
+
+}
+
+#imput{
+    background-color: lightgreen;
+    border: 5px solid royalblue;
+
+}
+ul{
+    list-style: none;
+}
+
+#square{
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.anna{
+    position: relative;
+    animation-name: anim-square;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+footer{
+    background-color: blanchedalmond;
+}
+
+@keyframes anim-square {
+    0%{
+background-color: red;
+top: 0px;
+    }
+    25%{
+background-color: orange;
+    }
+    50%{
+background-color: yellow;
+top: 100px;
+    }
+    75%{
+background-color: green;
+    }
+    100%{
+background-color: blue;
+top: 0px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .flex-cont{
+        display: flex;
+    }
+    
+    .flex{
+        flex: 1;
+    }
+    
+}

@@ -1,0 +1,26 @@
+body{
+
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.special{
+    background-color: aliceblue;
+    padding: 5px;
+    color: aqua;
+    border: 5px dotted lavenderblush;
+
+}
+
+.hide{
+    display: none;
+}
+
+
+@media only screen and (min-width 786px){
+    
+}

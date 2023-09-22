@@ -10,14 +10,12 @@ body{
 }
 
 .main-content{
-   
+   /* display: flex;
+    */
 }
 
-.main-content{
-    display: flex;
-}
 
-#ass-1,#ass-2,#ass-3, #ass-5{
+#ass-1,#ass-2,#ass-3, #ass-5, #ass-6{
     background-color: aquamarine;
     display: table;
     border: 5px solid deepskyblue;
@@ -48,10 +46,12 @@ body{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     
     .main-content{
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        flex: auto;
     }
 
     #ass-1,#ass-2,#ass-3{
