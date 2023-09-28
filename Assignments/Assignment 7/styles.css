@@ -1,0 +1,126 @@
+:root {
+    --num: 0%;
+}
+/* reg things*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FDC7B9;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+#exercise-one,
+#exercise-two {
+    background-color: white;
+    border: 5px solid #eb846b;
+    padding: 100px;
+   
+}
+
+#exercise-one{
+    text-align: center;
+}
+
+/* nav */
+#main-nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#main-nav li {
+    background-color: #949292;
+    padding: 10px;
+    margin: auto;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+#menu-items li {
+    text-align: center;
+}
+
+.padded-area {
+    padding: 5px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*text*/
+
+#error-message,
+#error-two {
+    color: red;
+}
+
+#menu-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/*page 2*/
+
+#thermometer-outline {
+    height: 500px;
+    width: 150px;
+    border: 5px solid black;
+    margin: auto;
+}
+
+#gradient {
+    height: 500px;
+    width: 150px;
+}
+
+.gfull {
+    background: linear-gradient(0deg, #d00019 var(--num), white var(--num) 100%);
+}
+
+#text-boxes label,
+input {
+    display: inline-block;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+
+@media (min-width:900px){
+    #menu-items {
+        display: flex;
+    }
+
+    #menu-items li {
+        flex: 1;
+    }
+
+    #menu-items a {
+        border-bottom: 3px solid transparent;
+    }
+
+    #menu-items a:hover {
+        border-bottom: 3px solid rgb(160, 153, 153);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+}
