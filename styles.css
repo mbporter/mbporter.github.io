@@ -1,5 +1,6 @@
 body{
     background-color: #4169E1;
+    
 }
 
 #main-header{
@@ -10,8 +11,9 @@ body{
 }
 
 .main-content{
-   /* display: flex;
-    */
+   display: flex;
+   flex: 1;
+   flex-wrap: wrap;
 }
 
 
