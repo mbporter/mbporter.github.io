@@ -1,16 +1,37 @@
 :root {
-    --num: 0%;
+    --percentage: 0%;
 }
-
+/* the basic*/
 body{
     background-color: darkblue;
-    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+/* first running man*/
+#running{
+    background-color: antiquewhite;
+    border: black 5px solid;
+   padding: 10px;
+}
+#runner {
+    --goLeft: 0%;
+    position: relative;
+    left: var(--goLeft);
+}
+.hidden{
+    display: none;
 }
 
-#exercise-two{
+/*donating*/
+#exercise{
     background-color: antiquewhite;
-    display: block;
+    border: black 5px solid;
+    padding: 10px;
 }
+#error {
+    color: red;
+}
+
 #thermometer-outline {
     height: 500px;
     width: 150px;
@@ -27,13 +48,15 @@ body{
     background: linear-gradient(0deg, #d00019 var(--num), white var(--num) 100%);
 }
 
-#text-boxes label,
-input {
-    display: inline-block;
-}
 
-label {
-    width: 100px;
-    text-align: right;
-    padding: 5px;
-}
+ @media only screen and (min-width: 600px) {
+    .flex-cont{
+        display: flex;
+    }
+    
+    .flex{
+        flex: 1;
+    }
+    
+} 
+

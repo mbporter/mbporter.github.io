@@ -1,34 +1,50 @@
+const runPlease = () => {
+    const img = document.getElementById("runner");
+
+    let count = 0;
+    
+    const interval = setInterval(() => {
+        
+        img.src="images/walking.png";
+        
+        count++;
+        img.style.setProperty("--goLeft", + count + "px");
+
+        if(count%2 == 0){
+            img.src="images/running.png";
+        }
+
+        if(count == 300){
+            clearInterval(interval);
+        }
+    }, 10);
+};
+
 const displayTherm = () => {
-    const fundAmt = parseInt(document.getElementById("funds").value);
+    const donations = parseInt(document.getElementById("funds").value);
     const root = document.querySelector(":root");
 
-    const error = document.getElementById("error-two");
+    const error = document.getElementById("error");
     error.classList.add("hidden");
-
-    if(fundAmt < 0){
+    if(donations < 0 && donations > 10000){
         error.classList.remove("hidden");
         error.innerHTML = "* Not a valid number";
     }
 
-    
-    if(fundAmt <= 4999 && fundAmt > 0){
-        root.style.setProperty("--num", "25%")
-    } else if(fundAmt <= 7499 && fundAmt > 0){
-        root.style.setProperty("--num", "50%")
-    } else if(fundAmt <= 9999 && fundAmt > 0){
-        root.style.setProperty("--num", "75%")
-    } else if (fundAmt == 10000 && fundAmt > 0){
-        root.style.setProperty("--num", "100%")
-    }
+    let count = 0;
+
+    const interval = setInterval(() => {
+        
+        if(donations/10000*100 <= count){
+            clearInterval(interval);
+        } else {
+            count++;
+            root.style.setProperty("--percentage", + count + "%");
+        }
+    }, 10);
 }
 
-
-
-
 window.onload = () => {
-    // document.getElementById("menu-toggle").onclick = toggleNav;
-    // document.getElementById("compare-button").onclick = displayInput;
     document.getElementById("fund-button").onclick = displayTherm;
-    // document.getElementById("eOne").onclick = showOne;
-    // document.getElementById("eTwo").onclick = showTwo;
+    document.getElementById("runner").onclick = runPlease;
 }
