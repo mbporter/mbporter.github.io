@@ -1,0 +1,39 @@
+:root {
+    --num: 0%;
+}
+
+body{
+    background-color: darkblue;
+    display: flex;
+}
+
+#exercise-two{
+    background-color: antiquewhite;
+    display: block;
+}
+#thermometer-outline {
+    height: 500px;
+    width: 150px;
+    border: 5px solid black;
+    margin: auto;
+}
+
+#gradient {
+    height: 500px;
+    width: 150px;
+}
+
+.gfull {
+    background: linear-gradient(0deg, #d00019 var(--num), white var(--num) 100%);
+}
+
+#text-boxes label,
+input {
+    display: inline-block;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
