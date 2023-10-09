@@ -55,7 +55,7 @@ body{
         flex: auto;
     }
 
-    #ass-1,#ass-2,#ass-3{
+    #ass-1,#ass-2,#ass-3,#ass-5, #ass-6, #ass-7 , #ass-8 , #wireframe , #ass-9 , #part1{
         flex: 1;
     }
 }
