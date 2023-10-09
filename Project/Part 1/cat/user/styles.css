@@ -59,6 +59,14 @@ border: 5px solid lightskyblue;
 flex: 1;
 }
 
+
+.item{
+    border: 5px solid grey;
+}
+.chunk{
+    display: flex;
+    flex: 1;
+}
 .flex-cont{
     display: flex;
 }

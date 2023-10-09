@@ -7,10 +7,7 @@ header{
     display: flex;
     text-align: center;
 }
-#bigger-box{
-   
-   border: 15px solid pink;
-}
+
 .big-ol-box{
     margin: auto;
     padding: 5px;
@@ -55,18 +52,12 @@ header{
 }
 
 .book{
-margin: 20px;
-padding: 30px;
+margin: 10px;
+padding: 10px;
 background-color: beige;
 border: 5px solid lightskyblue;
 flex: 1;
 }
-
-#best-book{
-    flex-wrap: wrap;
- 
-}
-
 
 .flex-cont{
     display: flex;
