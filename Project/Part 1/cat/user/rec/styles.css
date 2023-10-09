@@ -59,6 +59,19 @@ border: 5px solid lightskyblue;
 flex: 1;
 }
 
+#rec{
+    background-color: lightcyan;
+    border: 10px solid grey;
+}
+
+footer{
+    background-color: lightgreen;
+    border: 5px solid lightcyan;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
 .flex-cont{
     display: flex;
 }

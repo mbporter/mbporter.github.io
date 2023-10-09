@@ -43,7 +43,10 @@ header{
     /* text-align: left; */
     text-align: center;
 }
-
+#checks{
+    display: block;
+    text-size-adjust: 80%;
+}
 
 .nestcol{
     background-color: darkgray;
@@ -61,4 +64,10 @@ flex: 1;
 
 .flex-cont{
     display: flex;
+}
+
+footer{
+    background-color: lightgreen;
+    border: 5px solid lightcyan;
+    text-align: center;
 }

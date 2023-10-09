@@ -67,7 +67,11 @@ flex: 1;
  
 }
 
-
+footer{
+    background-color: lightgreen;
+    border: 5px solid lightcyan;
+    text-align: center;
+}
 .flex-cont{
     display: flex;
 }
