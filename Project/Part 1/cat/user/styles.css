@@ -73,17 +73,26 @@ text-align: center;
 .item{
     border: 5px solid grey;
     background-color: rgb(121, 172, 120);
+    text-align: center;
+    
 }
 .chunk{
     /* display: flex; */
     display: block;
     flex: 1;
 }
-
+#sec-2{
+    background-color: rgb(176, 217, 177);
+    border: 10px solid black;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
 footer{
     background-color: rgb(176, 217, 177);
     border: 5px solid lightcyan;
     text-align: center;
+    
 }
 .flex-cont{
     display: flex;
