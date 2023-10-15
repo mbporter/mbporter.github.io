@@ -1,31 +1,43 @@
 body{
-    background-color: whitesmoke;
+    background-color: rgb(97, 130, 100);
 }
 
 
 header{
     display: flex;
     text-align: center;
+    background-color: rgb(121, 172, 120);
+    border: 5px solid black;
 }
 #bigger-box{
+   background-color: rgb(121, 172, 120);
    
-   border: 15px solid pink;
 }
 .big-ol-box{
     margin: auto;
     padding: 5px;
-    background-color: lightcyan;
+    background-color: rgb(176, 217, 177);
     border: 5px solid grey;
     text-align: center;
 }
 /*test*/
+
+a{
+    text-decoration: none;
+    color: rgb(121, 172, 120);
+}
+
+a:hover{
+color: rgb(208, 231, 210);
+}
+
 
 .columns{
     margin: auto;
     padding: 5px;
 }
 .nestcol{/*DONT CHANGE ITS PERFECT AS IT IS*/
-    border: 2px solid blue;
+    border: 2px solid rgb(121, 172, 120);
     padding: 30px;
     margin: 10px;
     display: flex;
@@ -39,8 +51,8 @@ header{
 
 
 .info-col1of2{
-    background-color: lightgray;
-    border: 5px solid grey;
+    background-color: rgb(176, 217, 177);
+    border: 5px solid rgb(121, 172, 120);
     padding: 10px;
     margin: auto;
     /* text-align: left; */
@@ -49,7 +61,7 @@ header{
 
 
 .nestcol{
-    background-color: darkgray;
+    background-color: rgb(97, 130, 100);
     display:inline-block;
     
 }
@@ -57,9 +69,10 @@ header{
 .book{
 margin: 20px;
 padding: 30px;
-background-color: beige;
+background-color: rgb(176, 217, 177);
 border: 5px solid lightskyblue;
 flex: 1;
+text-align: center;
 }
 
 #best-book{
