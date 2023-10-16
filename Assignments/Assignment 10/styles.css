@@ -1,12 +1,12 @@
 /* Structure */
 body {
-    background-color: lightcyan;
+    background-color: lightskyblue;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Main Head */
 #main-head {
-    background-color: #ebadeb;
+    background-color: mediumturquoise;
     border-radius: 10px;
     text-align: center;
 }

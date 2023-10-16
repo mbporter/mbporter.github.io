@@ -47,12 +47,12 @@ class Toys {
   const Toy = () => {
     const toyList = document.getElementById("toys-list");
     const toys = [];
-    toys.push(new Toys("Care Bear", "$10.99", "2+", "4.8 stars", "care.jpg"));
-    toys.push(new Toys("Baby Alive", "$34.99", "2+", "4 stars", "baby.jpg"));
-    toys.push(new Toys("Hello Kitty", "$11.99", "4+", "5 stars", "hello.jpg"));
-    toys.push(new Toys("Little Miss", "$3.99", "5+", "4.5 stars", "little.jpg"));
-    toys.push(new Toys("Truck", "$5.99", "5+", "4.2 stars", "truck.jpg"));
-    toys.push(new Toys("Yo-Yo", "$2.99", "10+", "3.4 stars", "yoyo.jpg"));
+    toys.push(new Toys("Kirby plush", "$16.00", "4+", "4.8 stars", "kirby.webp"));
+    toys.push(new Toys("Monster High Doll", "$15.99", "3+", "4.8 stars", "mhd.jpg"));
+    toys.push(new Toys("Baby GUND  Plush", "$11.99", "1+", "5 stars", "scary.jpg"));
+    toys.push(new Toys("Dino Figure", "$34.99", "10+", "5 stars", "dino.jpg"));
+    toys.push(new Toys("Plush", "$17.99", "3+", "4.8 stars", "autism.jpg"));
+    toys.push(new Toys("Pop Tubes", "$5.99", "5+", "2 stars", "tube.jpg"));
   
     toys.forEach((toy) => {
       toyList.append(toy.ToyItem);
