@@ -56,6 +56,9 @@ a{
     text-decoration: none;
     color: rgb(121, 172, 120);
 }
+a:hover{
+    color: rgb(208, 231, 210);
+    }
 .book{
 margin: 10px;
 padding: 10px;
