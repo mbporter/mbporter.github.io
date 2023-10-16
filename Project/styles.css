@@ -16,7 +16,7 @@ body{
    flex-wrap: wrap;
 }
 
-#ass-1,#ass-2,#ass-3, #ass-5, #ass-6, #ass-7 , #ass-8  , #ass-9 , #ass-10{
+#ass-1,#ass-2,#ass-3, #ass-5, #ass-6, #ass-7 , #ass-8 , #wireframe , #ass-9 , #part1, #ass-10, #part-3{
     background-color: aquamarine;
     display: table;
     border: 5px solid deepskyblue;
@@ -45,6 +45,7 @@ a:hover{
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #main-nav ul {
     padding-left: 0px;
     list-style: none;
@@ -66,6 +67,8 @@ body{
     margin: auto;
 }
 
+
+
 @media only screen and (min-width: 600px) {
     
     .main-content{
@@ -74,7 +77,7 @@ body{
         flex: auto;
     }
 
-    #ass-1,#ass-2,#ass-3,#ass-5, #ass-6, #ass-7 , #ass-8  , #ass-9 , #ass-10{
+    #ass-1,#ass-2,#ass-3,#ass-5, #ass-6, #ass-7 , #ass-8 , #wireframe , #ass-9 , #part1, #ass-10, #part-3{
         flex: 1;
     }
     #menu-items {
