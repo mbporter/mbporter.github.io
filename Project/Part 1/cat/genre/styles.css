@@ -24,7 +24,7 @@ header{
     padding: 5px;
 }
 .nestcol{/*DONT CHANGE ITS PERFECT AS IT IS*/
-    border: 2px solid blue;
+    border: 2px solid lightgrey;
     padding: 30px;
     margin: 10px;
     display: flex;
