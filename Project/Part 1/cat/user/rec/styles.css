@@ -84,3 +84,45 @@ footer{
 .flex-cont{
     display: flex;
 }
+
+.forms {
+    background-color: var(--back);
+    border-radius: 10px;
+    width: 50%; 
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+  }
+  .hidden {
+    display: none;
+  }
+  #success-message {
+    background-color: var(--back);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+  }
+  #success-message h2 {
+    color: var(--white);
+  }
+  
+  #success-message p {
+    font-size: medium;
+    color: var(--white);
+    margin: 10px 0;
+  }
+
+  @media only screen and (min-width: 600px) {
+    
+    
+
+    .flex-cont{
+        
+        display: flex;
+    }
+}

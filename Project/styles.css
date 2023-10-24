@@ -16,7 +16,7 @@ body{
    flex-wrap: wrap;
 }
 
-#ass-1,#ass-2,#ass-3, #ass-5, #ass-6, #ass-7 , #ass-8 , #wireframe , #ass-9 , #part1, #ass-10, #part-3{
+#ass-1,#ass-2,#ass-3, #ass-5, #ass-6, #ass-7 , #ass-8 , #wireframe , #ass-9 , #part1, #ass-10, #part-3, #part-4{
     background-color: aquamarine;
     display: table;
     border: 5px solid deepskyblue;
@@ -77,7 +77,7 @@ body{
         flex: auto;
     }
 
-    #ass-1,#ass-2,#ass-3,#ass-5, #ass-6, #ass-7 , #ass-8 , #wireframe , #ass-9 , #part1, #ass-10, #part-3{
+    #ass-1,#ass-2,#ass-3,#ass-5, #ass-6, #ass-7 , #ass-8 , #wireframe , #ass-9 , #part1, #ass-10, #part-3, #part-4{
         flex: 1;
     }
     #menu-items {
