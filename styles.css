@@ -16,17 +16,7 @@ body{
    flex-wrap: wrap;
 }
 
-#ass-1,#ass-2,#ass-3, #ass-5, #ass-6, #ass-7 , #ass-8  , #ass-9 , #ass-10, #ass-11, #node, #ass-16 , #ass-17 , #final{
-    background-color: aquamarine;
-    display: table;
-    border: 5px solid deepskyblue;
-    margin: 10px;
-    padding: 40px 20px;
-    text-align: center;
-    float: left;
-    clear: both;
-    width: 33%;
-}
+
 
 footer{
     text-align: center;
@@ -74,16 +64,11 @@ body{
         flex: auto;
     }
 
-    #ass-1,#ass-2,#ass-3,#ass-5, #ass-6, #ass-7 , #ass-8  , #ass-9 , #ass-10, #ass-11, #node , #ass-16, #ass-17, #final{
-        flex: 1;
-    }
+    
     #menu-items {
         display: flex;
     }
 
-    #menu-items li {
-        flex: 1;
-    }
 
     #menu-items a {
         border-bottom: 3px solid transparent;
