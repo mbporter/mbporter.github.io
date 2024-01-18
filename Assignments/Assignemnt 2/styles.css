@@ -6,21 +6,42 @@ background-image: url(images/DSC_0156.JPG);
 
 #main-header{
     background-color: royalblue;
+   padding: 10px;
    
 }
 
-.LI{
-    background-color: lightblue;
-}
+
 
 #writing{
-    background-color: thistle;
+    background-color: seagreen;
 }
 table{
    
-    background-color: cadetblue;
+    background-color: green;
 }
 table, th, td{
     border: 2px solid;
-    border-color: gray;
+    padding: 5px;
+    border-color: lightskyblue;
+}
+a :hover{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+#main-nav a{
+    flex: 1;
+    text-decoration: none;
+    background: gray;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+#main-nav :hover{
+    color: black;
+}
+img{
+    border: seagreen solid 2px;
+    padding: 10px;
 }
