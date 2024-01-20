@@ -1,0 +1,178 @@
+/* main areas */
+
+body{
+    background-color: beige;
+    text-align: center;
+    margin: 30px;
+}
+
+
+#main-footer{
+background-color: blanchedalmond;
+}
+
+/*general classes*/
+ 
+.padded-area{
+    padding: 7px;
+    margin: auto;
+
+}
+
+/*main nav*/
+/* #main-nav{
+flex-wrap: wrap;} */
+/* #main-nav ul{
+    background-color: coral;
+    color: white;
+    border: lightblue solid 2px;
+
+}
+#main-nav a{
+    text-decoration: none;
+    color: white;
+    /* flex: 1;
+    flex-direction: row; 
+}
+/* #main-nav a:hover{
+    border-bottom: 2px solid lightblue;
+    
+}
+#main-nav li{
+    list-style-type: none;
+   /* display: inline-block; 
+   margin: auto;
+    
+} */
+
+#main-nav ul{
+    background-color: grey;
+    display: flex;
+}
+
+#main-nav li{
+    list-style-type: none;
+   /* display: inline-block; */
+   margin: auto;
+   
+}
+
+#main-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#main-nav a:hover{
+    border-bottom: 2px solid green;
+    
+}
+
+/*upper part of page*/
+
+
+.upper{ /* main content and side bar*/
+    
+    column-gap: 20px;
+    
+}
+
+
+/*main content*/
+#main-content{
+    background-color: antiquewhite;
+    /* display: flex; */
+}
+
+.links{
+    border: darkblue solid 1px;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: left;
+   
+}
+.links a{
+    color: coral;
+    text-decoration: none;
+}
+.links :hover{
+    color: darkblue;
+}
+
+
+
+
+.Big-ideas{
+    
+   
+    
+    /* display: flex;
+    flex-direction: column; */
+   
+}
+.ideas{
+    border: darkblue solid 1px;
+    /* flex: 1;
+    display: flex; */
+}
+
+
+/* Bottom*/
+
+#bot{
+    background-color: darkcyan;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: space-around; */
+}
+
+.title{
+    /* display: flex;
+    flex-direction: row; */
+}
+
+
+
+/* footer information*/
+footer{
+    color: white;
+    text-align: center;
+}
+#at{
+    color: steelblue;
+    text-align: bottom right;
+
+}
+
+/*typeogphy*/
+
+
+/*images*/
+image{
+    margin: auto;
+    padding: auto;
+    display: block;
+}
+
+
+/* larger res */
+
+@media only screen and (min-width: 600px) {
+    /* #main-content{
+        flex: auto;
+    } */
+#main-nav{
+    /* display: flex; */
+
+}
+/* #main-nav{
+    flex: 1;
+} */
+
+    .Big-ideas{
+        /* flex: 1; */
+    }
+    .ideas{
+        /* flex: 1;
+        display: flex; */
+    } 
+}

@@ -16,7 +16,9 @@ body{
    flex-wrap: wrap;
 }
 
-
+.ass{
+    padding: 10px;
+}
 
 footer{
     text-align: center;
