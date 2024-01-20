@@ -1,0 +1,12 @@
+/* main areas */
+
+body{
+    background-color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+
+#main-content{
+    display: flex;
+}
