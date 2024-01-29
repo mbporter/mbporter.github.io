@@ -10,9 +10,8 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    margin: -20px;;
+    margin: -10px;;
     padding: 1em;
-    background-size: cover;   
     display: block;
 
 }
@@ -20,7 +19,6 @@ footer{
     background-color:#73000A;
 }
 
-/* Typography*/
 h1,h2,h3,h4,h5,h6{
     color: #73000A;
 }
@@ -50,18 +48,15 @@ h6{
     text-wrap: nowrap;
 }
 #main-list ul li{
-    border-bottom: 1px solid #c7c7c7;
-    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid grey;
     list-style: none;
-    text-wrap:balance;
-    padding: 5px;
-    }
+}
 
-#Banner{
+#col-name{
     background-color: #73000A;
-    color: rgb(255, 255, 255);
-    margin: 0px;
-    padding: 4px;
+    color: white;
+    padding: 10px;
 }
 #final {
     background-color: #73000a;
@@ -104,7 +99,7 @@ footer a:hover {
 .botlist{
     color: white;
 }
-#Banner::after{
+#col-name:after{
     background-color: #73000A;
 }
 #Headers{
@@ -116,17 +111,12 @@ footer a:hover {
 
 #topnav{
     position: absolute;
-    right:0;
-    top:0;
     text-align: right;
-    padding: .75em;
 }
 #main-nav{
     display: flex;
     list-style: none;
-    align-self: flex-end;
     text-align: left;
-    font-size: .75rem;
     margin: 3px;
 }
 #main-nav ul{
@@ -137,8 +127,9 @@ footer a:hover {
    padding: 5px;
    align-self: flex-end;
 }
-#rightbox{
+#side{
     border: black 2px solid;
+    background-color: lightgrey;
 }
 
 #main-list a{
@@ -157,8 +148,8 @@ footer a:hover {
 .row{
     padding: 5px;
     border-bottom: 1px solid;
-    border-color:#c7c7c7;
-    border-top: 1px solid #c7c7c7;
+    border-color: grey;
+    border-top: 1px solid grey;
 
 }
 #main-content{
@@ -179,15 +170,16 @@ li:hover{
     background-color: #73000a;
 }
 
+#plain{
+    color: black;
+}
 
-
-/* Resolutions*/
 @media (min-width:1000px) {
     .container{
         display: flex;
         ;
     }
-    .fleximg{
+    .flexing{
      align-self: flex-start;
      padding-right: 5px;
     }
@@ -209,7 +201,7 @@ li:hover{
     #sub{
         flex: 90%;
     }
-    #footnav{
-        display: flex;
-    }
+   footer{
+    display: flex;
+   }
 }
