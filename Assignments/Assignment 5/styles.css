@@ -10,13 +10,12 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    margin: -10px;;
-    padding: 1em;
     display: block;
-
 }
-footer{
-    background-color:#73000A;
+
+#block{
+    padding: 20px;
+    margin: 20px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -29,10 +28,7 @@ a{
     color: white;
     text-decoration: none;
 }
-ul{
-    padding: 20px;
-   
-}
+
 li:hover{
     color: white;
     background-color: #73000a;
@@ -44,9 +40,7 @@ h1{
     padding: .5em;
     text-align: left;
 }
-h6{
-    text-wrap: nowrap;
-}
+
 #main-list ul li{
     border-bottom: 1px solid gray;
     border-top: 1px solid grey;
@@ -142,29 +136,22 @@ footer a:hover {
    
     display:flex;
     margin: auto;
-    padding: 50px;
+   
     width: 70%;
 }
 .row{
-    padding: 5px;
+    padding: 10px;
     border-bottom: 1px solid;
     border-color: grey;
     border-top: 1px solid grey;
 
 }
 #main-content{
-    padding-left:5em;
+    padding-left:20px;
     flex: 80%;
 }
-#copyright{
-    justify-content: flex-start;
-}
-#footnav{
-    position: relative;
-    justify-content: flex-end;
-    flex: 1;
-    padding: .75em;
-}
+
+
 li:hover{
     color: white;
     background-color: #73000a;
@@ -183,11 +170,7 @@ li:hover{
      align-self: flex-start;
      padding-right: 5px;
     }
-    #mainimg{
-        align-self: center;
-        width: 100%;
-        height: auto;
-    }
+
     #sub, .bottom{
         flex: 1;
     }
