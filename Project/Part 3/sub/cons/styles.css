@@ -1,12 +1,22 @@
-body{
-    background-color: rgb(97, 130, 100);
+:root {
+    --blue: #6495ed;
+    --white: #faf0e6;
+    --green: rgb(50, 168, 82);
+    --grey: #8a8888
 }
 
 
+body{
+    background-color: var(--blue);
+}
+
+#text{
+    background-color: var(--white);
+    border: solid 2px var(--green);
+}
 header{
-    
+    background-color: var(--grey);
     text-align: center;
-    background-color: rgb(121, 172, 120);
     border: 5px solid black;
 }
 header h1{
@@ -14,9 +24,9 @@ header h1{
 }
 
 .big-ol-box{
+    background-color: var(--blue);
     margin: auto;
     padding: 5px;
-    background-color: rgb(121, 172, 120);
     border: 5px solid grey;
     text-align: center;
 }
@@ -41,8 +51,8 @@ header h1{
 
 
 .info-col1of2{
-    background-color: rgb(176, 217, 177);
-    border: 5px solid rgb(121, 172, 120);
+    background-color: var(--blue);
+    border: 5px solid var(--grey);
     padding: 10px;
     margin: auto;
     /* text-align: left; */
@@ -54,13 +64,13 @@ header h1{
 }
 
 .nestcol{
-    background-color: rgb(97, 130, 100);
+    background-color: var(--white);
     display:inline-block;
     
 }
 a{
     text-decoration: none;
-    color: rgb(121, 172, 120);
+    color: var(--blue);
 }
 
 a:hover{
@@ -69,7 +79,7 @@ color: rgb(208, 231, 210);
 .book{
 margin: 10px;
 padding: 10px;
-background-color: rgb(176, 217, 177);
+background-color: var(--white);
 border: 5px solid lightskyblue;
 flex: 1;
 text-align: center;
@@ -78,7 +88,7 @@ text-align: center;
 
 
 footer{
-    background-color: rgb(176, 217, 177);
+    background-color: var(--blue);
     border: 5px solid lightcyan;
     text-align: center;
 }
