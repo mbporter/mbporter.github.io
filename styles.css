@@ -16,7 +16,7 @@ body{
    flex-wrap: wrap;
 }
 
-#ass-1,#ass-2,#ass-3, #pro-1, #pro-2, #ass-5, #ass-7, #pro-3 {
+#ass-1,#ass-2,#ass-3, #pro-1, #pro-2, #ass-5, #ass-7, #pro-3, #ass-8 {
     background-color: aquamarine;
     display: table;
     border: 5px solid deepskyblue;
@@ -78,7 +78,7 @@ body{
         flex: auto;
     }
 
-    #ass-1,#ass-2,#ass-3, #pro-1, #pro-2, #ass-5, #ass-7, #pro-3{
+    #ass-1,#ass-2,#ass-3, #pro-1, #pro-2, #ass-5, #ass-7, #pro-3, #ass-8{
         flex: 1;
     }
     #menu-items {
