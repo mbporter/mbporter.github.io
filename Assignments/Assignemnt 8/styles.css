@@ -57,9 +57,24 @@ h3 {
 
 /*text*/
 
-#error-message,
-#error-two {
-    color: red;
+#list{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+#yogaslide{
+    background-color: grey;
+    -webkit-appearance: none;  
+  
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
 }
 
 #menu-toggle div {

@@ -1,7 +1,13 @@
 const toggleNav = () => {
     document.getElementById("menu-items").classList.toggle("hidden");
 }
-//showing the diffrent exe. by not using diffrent html files
+
+const yoga = document.getElementById("yogaslider")
+
+
+
+
+
 const showOne = () => {
     document.getElementById("exercise-one").classList.remove("hidden");
     document.getElementById("exercise-two").classList.add("hidden");
@@ -14,7 +20,6 @@ const showTwo = () => {
 
 
 
-//showing how much red based off % between
 
 //on load menu
 window.onload = () => {
