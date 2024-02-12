@@ -2,6 +2,7 @@ const toggleNav = () => {
     document.getElementById("menu-items").classList.toggle("hidden");
 }
 
+
 const CommandLine = document.getElementById("letters");
 const image = document.getElementById("man");
 
