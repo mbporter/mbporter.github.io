@@ -1,0 +1,172 @@
+:root {
+    --num: 0%;
+}
+/* reg things*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F1F2E9;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+#exercise-one,
+#exercise-two {
+    background-color: #F2F0D5;
+    border: 5px solid #649297;
+    padding: 20px;
+    margin: 70px;
+   
+}
+
+#exercise-one{
+    text-align: center;
+}
+
+/* nav */
+#main-nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#main-nav li {
+    background-color: #949292;
+    padding: 10px;
+    margin: auto;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+#menu-items li {
+    text-align: center;
+}
+
+.padded-area {
+    padding: 5px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*text*/
+
+#list{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+#yogaslide{
+    background-color: grey;
+    -webkit-appearance: none;  
+  
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+#menu-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/*page 2*/
+
+
+#yoga ul{
+    text-decoration: none;
+}
+#yoga li{
+    text-decoration: none;
+}
+#area {
+    position: relative;
+    width: 200px;
+    height: 500px; /* Adjusted height */
+    border: 1px solid black;
+    margin: 20px auto; /* Center the area */
+}
+
+#ball {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    bottom: 0; /* Start from the bottom */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make it round */
+}
+
+.text-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-list li {
+    margin-right: 10px; /* Adjust spacing between list items */
+}
+.yoga-list li {
+    margin-right: 10px; /* Adjust spacing between list items */
+}
+
+
+
+.gfull {
+    background: linear-gradient(0deg, #d00019 var(--num), white var(--num) 100%);
+}
+
+#text-boxes label,
+input {
+    display: inline-block;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+
+@media (min-width:900px){
+    #menu-items {
+        display: flex;
+    }
+
+    #menu-items li {
+        flex: 1;
+    }
+
+    #menu-items a {
+        border-bottom: 3px solid transparent;
+    }
+
+    #menu-items a:hover {
+        border-bottom: 3px solid rgb(160, 153, 153);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+}
