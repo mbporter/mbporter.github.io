@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--Written by Mac Porter :D-->
+<html>
+<head>
+    <title>Classes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Assignment 11</h1>
+    <h2>Classes</h2>
+    <div id="outside">
+        <div id="content"> 
+            <section class="boxes"> 
+                <div class="flex-container" id="box1" onclick="showModal(0)">
+                    <h3>Palm</h3>
+                    <img src="images/palm.jpg">
+                </div>
+                <div class="flex-container" id="box2" onclick="showModal(1)">
+                    <h3>Willow</h3>
+                    <img src="images/Willow.jpg">
+                </div>
+                <div class="flex-container" id="box3" onclick="showModal(2)">
+                    <h3>Elm</h3>
+                    <img src="images/elm.jpg">
+                </div>
+                <div class="flex-container" id="box4" onclick="showModal(3)">
+                    <h3>Maple</h3>
+                    <img src="images/maple.jpg">
+                </div>
+            </section>
+        </div>  
+    </div>
+
+    <div id="id01" class="w3-modal" style="display: none;">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-teal">
+                <span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
+                <h2 id="modal-header">Modal Header</h2>
+            </header>
+            <div class="w3-container flex-container">
+                <div class="text-section" id="modal-body">
+                </div>
+                <div class="image-section">
+                    <img id="modal-image" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <p> @mbporter</p>
+    </footer>
+</body>
+</html>

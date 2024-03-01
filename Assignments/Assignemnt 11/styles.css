@@ -1,0 +1,146 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F1F2E9;
+    margin: 0;
+}
+
+/* Structure */
+
+#content{
+    padding: 25px;
+    width: 95%;
+    margin: 55px;
+    margin: auto;
+    border-radius: 5px;
+}
+#outside {
+    background-color: #5D878C;
+}
+#content img {
+    max-width: 70%;
+    max-height: 100%;
+}
+
+/* Typography*/
+
+h1{
+    color: #D98282;
+    margin: 20px;
+    text-align: center;
+}
+h2{
+    color:#D98282;
+    margin: 20px;
+    text-align: center;
+}
+h3 {
+    color:#D98282;
+    margin: 20px;
+}
+p {
+    color: #5D878C;
+    margin: 20px;
+}
+
+#box1, #box2, #box3, #box4 {
+    background-color: #F2F0D5;
+    padding: 15px;
+    margin: 20px;
+}
+
+
+
+footer p {
+    text-align: center;
+}
+
+.w3-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.w3-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Adjust the width as needed */
+}
+
+.w3-modal img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.w3-modal-content .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.w3-modal-content .flex-container .text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.w3-modal-content .flex-container .image-section {
+    flex: 1;
+}
+
+.w3-modal-content .flex-container .image-section img {
+    max-width: 100%;
+    height: auto;
+}
+/* Larger Resolutions */
+@media(min-width:600px) {
+   .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 600px;
+    border: 1px solid #A4BFB8;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+   }
+
+   .boxes {
+    display: flex;
+    flex-direction: row;
+   }
+}
+
+@media(max-width:599px) {
+    .flex-container img{
+       display: block; 
+       margin: 0 auto;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flex-container {
+        width: 80%;
+        border: 1px solid #A4BFB8;
+    }
+
+    #box1, 
+    #box2, 
+    #box3, #box4 {
+        background-color: #F2F0D5;
+        width: 100%;
+        text-align: center;
+    }   
+}
