@@ -61,7 +61,6 @@ footer p {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
@@ -71,24 +70,17 @@ footer p {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 70%; /* Adjust the width as needed */
-}
-
-.w3-modal img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-.w3-modal-content .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 70%; 
 }
 
 .w3-modal-content .flex-container .text-section {
     flex: 1;
     padding-right: 20px;
+}
+.w3-modal-content .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .w3-modal-content .flex-container .image-section {
