@@ -34,7 +34,7 @@ const getAnimals = async () => {
     section.appendChild(ul);
     ul.appendChild(getLi(`Species: ${animal.species}`));
     ul.appendChild(getLi(`Habitat: ${animal.habitat}`));
-    ul.appendChild(getLi(`Description: ${animal.description}`));
+    ul.appendChild(getLi( animal.description));
     ul.appendChild(getLi(`Traits: ${animal.traits.join(', ')}`));
   
     return section;

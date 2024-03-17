@@ -91,6 +91,20 @@ color: rgb(208, 231, 210);
     margin: 20px;
 }
 
+#animal-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 50px;
+  }
+
+ul{
+    border: solid 5px grey;
+    background-color: lightgreen;
+}
+
 .main{
     background-color: var(--green);
     border: solid 2px ;
