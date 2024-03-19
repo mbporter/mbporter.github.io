@@ -1,0 +1,83 @@
+[
+    {
+      "_id": 1,
+      "name": "Rosa",
+      "species": "Otter",
+      "habitat": "Aquatic",
+      "img_name": "rosa.jpg",
+      "description": "Meet Rosa, our playful otter resident known for her energetic personality and love of swimming.",
+      "traits": ["Energetic", "Swims", "Playful"]
+    },
+    {
+      "_id": 2,
+      "name": "Bruno",
+      "species": "Bear",
+      "habitat": "Forest",
+      "img_name": "bear.jpg",
+      "description": "Meet Bruno, our majestic bear known for his gentle demeanor and impressive size.",
+      "traits": ["Gentle", "Large", "Roams"]
+    },
+    {
+      "_id": 3,
+      "name": "Luna",
+      "species": "Sea Lion",
+      "habitat": "Coastal",
+      "img_name": "sea_lion.jpg",
+      "description": "Meet Luna, our charming sea lion known for her playful antics and graceful swimming skills.",
+      "traits": ["Charming", "Graceful", "Performs"]
+    },
+    {
+      "_id": 4,
+      "name": "Max",
+      "species": "Tiger",
+      "habitat": "Jungle",
+      "img_name": "tiger.jpg",
+      "description": "Meet Max, our fierce tiger known for his majestic presence and powerful roar.",
+      "traits": ["Fierce", "Majestic", "Powerful"]
+    },
+    {
+      "_id": 5,
+      "name": "Sophie",
+      "species": "Giraffe",
+      "habitat": "Savannah",
+      "img_name": "giraffe.jpg",
+      "description": "Meet Sophie, our elegant giraffe known for her long neck and gentle nature.",
+      "traits": ["Elegant", "Tall", "Gentle"]
+    },
+    {
+      "_id": 6,
+      "name": "Charlie",
+      "species": "Elephant",
+      "habitat": "Grasslands",
+      "img_name": "elephant.jpg",
+      "description": "Meet Charlie, our friendly elephant known for his massive size and intelligence.",
+      "traits": ["Friendly", "Massive", "Intelligent"]
+    },
+    {
+      "_id": 7,
+      "name": "Lucy",
+      "species": "Penguin",
+      "habitat": "Antarctic",
+      "img_name": "penguin.jpg",
+      "description": "Meet Lucy, our adorable penguin known for her playful waddle and love of swimming.",
+      "traits": ["Adorable", "Playful", "Swims"]
+    },
+    {
+      "_id": 8,
+      "name": "Rocky",
+      "species": "Mountain Goat",
+      "habitat": "Mountain",
+      "img_name": "mountain_goat.jpg",
+      "description": "Meet Rocky, our agile mountain goat known for his ability to climb steep cliffs with ease.",
+      "traits": ["Agile", "Climber", "Adaptable"]
+    },
+    {
+      "_id": 9,
+      "name": "Molly",
+      "species": "Kangaroo",
+      "habitat": "Outback",
+      "img_name": "kangaroo.jpg",
+      "description": "Meet Molly, our energetic kangaroo known for her powerful hind legs and pouch.",
+      "traits": ["Energetic", "Hopper", "Pouched"]
+    }
+  ]
