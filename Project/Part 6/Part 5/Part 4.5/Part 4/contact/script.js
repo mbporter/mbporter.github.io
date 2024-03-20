@@ -6,6 +6,7 @@ const showEmailResult = async (e) => {
         const response = await getEmailResult();
         if (response.status === 200) {
             results.innerHTML = "Email Sent!";
+            displayFormData();
         } else {
             results.innerHTML = "Sorry, email cannot be sent at this time.";
         }
@@ -33,6 +34,14 @@ const getEmailResult = async () => {
     } catch (error) {
         throw error;
     }
+};
+
+const displayFormData = () => {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const results = document.getElementById("result");
+    results.innerHTML += `<br>Name: ${name}<br>Email: ${email}<br>Message: ${message}`;
 };
 
 window.onload = () => {
