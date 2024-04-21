@@ -11,12 +11,12 @@ app.use(express.json());
 
 //create multer storage and file filter function
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-      cb(null, "./public/images/");
-    },
-    filename: (req, file, cb) => {
-      cb(null, file.originalname);
-    },
+  destination: (req, file, cb) => {
+    cb(null, "./public/images/");
+  },
+  filename: (req, file, cb) => {
+    cb(null, file.originalname);
+  },
 });
 const upload = multer({ storage: storage });
 
@@ -24,106 +24,152 @@ const upload = multer({ storage: storage });
 mongoose
   .connect("mongodb+srv://Mbporter:Macmac123123@cluster0.sefh4en.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => console.log("Connected to mongodb..."))
-  .catch((err) => console.error("could not connect ot mongodb...", err));
+  .catch((err) => console.error("could not connect to mongodb...", err));
 
-//create database craft schema
-const craftSchema = new mongoose.Schema({
-  name: String,
-  img: String,
-  description: String,
-  supplies: [String]
-})
-const Craft = mongoose.model("Craft", craftSchema);
-
-// app routes
+  const animalSchema = new mongoose.Schema({
+    name: String,
+    species: String,
+    habitat: String,
+    description: String,
+    traits: String,
+    img: String,
+  });
+  const Animal = mongoose.model("Animal", animalSchema);
+  
+  app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+  });
+  
+  app.get("/api/animals", async (req, res) => {
+    try {
+      const animals = await Animal.find();
+      res.send(animals);
+    } catch (error) {
+      console.error("Error retrieving animals:", error);
+      res.status(500).send("Error retrieving animals");
+    }
+  });
+  
+  app.post("/api/animals", upload.single("img"), async (req, res) => {
+    try {
+      const newAnimal = new Animal({
+        name: req.body.name,
+        species: req.body.species,
+        habitat: req.body.habitat,
+        description: req.body.description,
+        traits: req.body.traits,
+      });
+  
+      if (req.file) {
+        newAnimal.img = "images/" + req.file.filename;
+      }
+  
+      await newAnimal.save();
+      res.send(newAnimal);
+    } catch (error) {
+      console.error("Error adding animal:", error);
+      res.status(500).send("Error adding animal");
+    }
+  });
+  
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-// get all
-app.get("/api/crafts", (req, res) => {
-  getCrafts(res)
+app.get("/api/animals", (req, res) => {
+  getAnimals(res);
 });
 
-//get one
-app.get("/api/crafts/:id", (req, res) => {
-    getCraft(res, req.params.id)
-});
-
-//add a craft
-app.post("/api/crafts", upload.single("img"), (req, res) => {
-    const result = validateCraft(req.body);
-
-    if (result.error) {
-        res.status(400).json({ errors: result.error.details.map(detail => detail.message) });
-        return;
-    }
-
-    const craft = new Craft({
-      name: req.body.name,
-      description: req.body.description,
-      supplies: req.body.supplies.split(","),
-    });
-
-    if (req.file) {
-      craft.img =  req.file.filename;
-    }
-
-    createCraft(res, craft);
-});
-
-//delete craft
-app.delete("/api/crafts/:id", (req,res)=>{
-        removeCraft(res, req.params.id);
-});
-
-//app functions
-const getCrafts = async (res) => {
-    const crafts = await Craft.find();
-    res.send(crafts);
-}
-
-const getCraft = async (res, id) => {
-    const craft = await Craft.findOne({_id:id})
-    res.send(craft);
-}
-
-const createCraft = async (res, craft) => {
-    const result = await craft.save();
-    res.send(result);
-}
-
-const updateCraft = async (req,res) => {
-      let updatefields ={
-        name: req.body.name,
-        description: req.body.description,
-        supplies: req.body.supplies.split(","),
-      };
-      if(req.file) {
-        updatefields.img = req.file.filename;
-      }
-      const result = await Craft.updateOne({_id: req.params.id}, updatefields);
-      res.send(result);
-}
-
-const removeCraft = async (res, id) => {
-      const result = await Craft.findByIdAndDelete(id);
-      res.send(result);
-}
-
-//validation
-const validateCraft = (craft) => {
-  const schema = Joi.object({
-    _id: Joi.allow(""),
-    supplies: Joi.allow(""),
-    name: Joi.string().min(3).required(),
-    description: Joi.string().min(3).required(),
-  });
-  const result = schema.validate(craft);
-  return result;
+const getAnimals = async (res) => {
+  const animals = await Animal.find();
+  res.send(animals);
 };
 
-//server
+app.post("/api/animals", upload.single("img"), (req, res) => {
+  console.log("Received POST request to /api/animals");
+  const result = validateAnimal(req.body);
+
+  if (result.error) {
+    console.log("Validation error:", result.error.details[0].message);
+    res.status(400).send(result.error.details[0].message);
+    return;
+  }
+
+  console.log("Validated input:", req.body);
+
+  const newAnimal = new Animal({
+    name: req.body.name,
+    date: req.body.date,
+    authenticity: req.body.authenticity,
+    condition: req.body.condition,
+    description: req.body.description,
+  });
+
+  if (req.file) {
+    newAnimal.img = "images/" + req.file.filename;
+  }
+
+  createAnimal(newAnimal, res);
+});
+
+const createAnimal = async (animal, res) => {
+  const result = await animal.save();
+  res.send(animal);
+};
+
+app.put("/api/animals/:id", upload.single("img"), (req, res) => {
+  console.log(`Received PUT request to /api/animals/${req.params.id}`);
+  const result = validateAnimal(req.body);
+
+  if (result.error) {
+    res.status(400).send(result.error.details[0].message);
+    return;
+  }
+
+  updateAnimal(req, res);
+});
+
+const updateAnimal = async (req, res) => {
+  let fieldsToUpdate = {
+    name: req.body.name,
+    date: req.body.date,
+    authenticity: req.body.authenticity,
+    condition: req.body.condition,
+    description: req.body.description,
+  };
+
+  if (req.file) {
+    fieldsToUpdate.img = "images/" + req.file.filename;
+  }
+
+  const result = await Animal.updateOne({ _id: req.params.id }, fieldsToUpdate);
+  const animal = await Animal.findById(req.params.id);
+  res.send(animal);
+};
+
+app.delete("/api/animals/:id", upload.single("img"), (req, res) => {
+  console.log(`Received DELETE request to /api/animals/${req.params.id}`);
+  removeAnimal(res, req.params.id);
+});
+
+const removeAnimal = async (res, id) => {
+  const animal = await Animal.findByIdAndDelete(id);
+  res.send(animal);
+};
+
+const validateAnimal = (animal) => {
+  const schema = Joi.object({
+    _id: Joi.allow(""),
+    name: Joi.string().min(3).required(),
+    date: Joi.string().min(3).required(),
+    authenticity: Joi.string().required(),
+    condition: Joi.allow(""),
+    description: Joi.allow(""),
+  });
+  console.log("Validating animal:", animal);
+  return schema.validate(animal);
+};
+
 app.listen(3000, () => {
-  console.log("serving port 3000");
+  console.log("I'm Listening");
 });
