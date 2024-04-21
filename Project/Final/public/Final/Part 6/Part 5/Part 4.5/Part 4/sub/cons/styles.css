@@ -14,22 +14,23 @@ body{
     background-color: var(--white);
     border: solid 2px var(--green);
 }
-header{
+header {
     background-color: var(--grey);
     text-align: center;
-    border: 5px solid black;
+    border: 1px solid black; /* I changed this to 1*/
 }
 header h1{
     text-align: center;
 }
 
-.big-ol-box{
+.big-ol-box {
     background-color: var(--blue);
     margin: auto;
     padding: 5px;
-    border: 5px solid grey;
+    border: 1px solid grey; /* I changed this to 1*/
     text-align: center;
 }
+
 /*test*/
 
 .columns{
@@ -85,6 +86,12 @@ flex: 1;
 text-align: center;
 }
 
+.search {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
 
 
 footer{
