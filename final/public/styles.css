@@ -1,0 +1,108 @@
+:root {
+    --blue: #6495ed;
+    --white: #faf0e6;
+    --green: rgb(50, 168, 82);
+    --grey: #8a8888
+}
+
+
+body{
+    background-color: var(--blue);
+}
+
+.search {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+header {
+    background-color: var(--grey);
+    text-align: center;
+    border: 1px solid black; /* I changed this to 1*/
+}
+header h1{
+    text-align: center;
+}
+
+.big-ol-box {
+    background-color: var(--blue);
+    margin: auto;
+    padding: 5px;
+    border: 1px solid grey; /* I changed this to 1*/
+    text-align: center;
+}
+
+/*test*/
+
+.columns{
+    margin: auto;
+    padding: 5px;
+}
+.nestcol {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    color: white;
+}
+
+.col-text{/*COL 1 OF 2 STUFF*/
+    text-align: left;
+    
+}
+
+
+.info-col1of2{
+    background-color: var(--blue);
+    border: 5px solid var(--grey);
+    padding: 10px;
+    margin: auto;
+    /* text-align: left; */
+    text-align: center;
+}
+#checks{
+    display: block;
+    text-size-adjust: 80%;
+}
+
+.nestcol{
+    background-color: var(--white);
+    display:inline-block;
+    
+}
+a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+a:hover{
+color: rgb(208, 231, 210);
+}
+.book{
+margin: 10px;
+padding: 10px;
+background-color: var(--white);
+border: 5px solid lightskyblue;
+flex: 1;
+text-align: center;
+}
+
+
+
+footer{
+    background-color: var(--blue);
+    border: 5px solid lightcyan;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    
+
+    .flex-cont{
+        
+        display: flex;
+    }
+}
