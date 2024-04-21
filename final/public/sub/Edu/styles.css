@@ -99,7 +99,16 @@ footer{
     border: 5px solid lightcyan;
     text-align: center;
 }
+footer {
+    background-color: var(--blue);
+    border: 5px solid lightcyan;
+    text-align: center;
 
+}
+.images{
+	border-radius: 50%
+	
+}
 @media only screen and (min-width: 1000px) {
     
     

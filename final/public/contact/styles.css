@@ -102,7 +102,21 @@ footer{
     border: 5px solid lightcyan;
     text-align: center;
 }
+.img{
+	height: 200px;
+	width: 200px;
+}
 
+.images{
+	border-radius: 50%
+	
+}
+footer {
+    background-color: var(--blue);
+    border: 5px solid lightcyan;
+    text-align: center;
+
+}
 @media only screen and (min-width: 1000px) {
     
     
