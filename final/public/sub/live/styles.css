@@ -94,8 +94,12 @@ color: rgb(208, 231, 210);
     
     background-color: lightblue;
     border: solid 2px var(--grey);
-    padding: 20px;
-    margin: 20px;
+    padding: 55px;
+    margin: 15px;
+}
+
+.text-box p{
+    font-size: 24px;
 }
 
 .main{
