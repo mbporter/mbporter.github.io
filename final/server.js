@@ -32,7 +32,6 @@ mongoose
     habitat: String,
     description: String,
     traits: String,
-    img: String,
   });
   const Animal = mongoose.model("Animal", animalSchema);
   
@@ -60,9 +59,7 @@ mongoose
         traits: req.body.traits,
       });
   
-      if (req.file) {
-        newAnimal.img = "images/" + req.file.filename;
-      }
+
   
       await newAnimal.save();
       res.send(newAnimal);
@@ -105,9 +102,7 @@ app.post("/api/animals", upload.single("img"), (req, res) => {
     description: req.body.description,
   });
 
-  if (req.file) {
-    newAnimal.img = "images/" + req.file.filename;
-  }
+
 
   createAnimal(newAnimal, res);
 });
@@ -117,7 +112,7 @@ const createAnimal = async (animal, res) => {
   res.send(animal);
 };
 
-app.put("/api/animals/:id", upload.single("img"), (req, res) => {
+app.put("/api/animals/:id", (req, res) => {
   console.log(`Received PUT request to /api/animals/${req.params.id}`);
   const result = validateAnimal(req.body);
 
@@ -132,22 +127,21 @@ app.put("/api/animals/:id", upload.single("img"), (req, res) => {
 const updateAnimal = async (req, res) => {
   let fieldsToUpdate = {
     name: req.body.name,
-    date: req.body.date,
-    authenticity: req.body.authenticity,
-    condition: req.body.condition,
+    species: req.body.species,
+    habitat: req.body.habitat,
     description: req.body.description,
-  };
+    traits: req.body.traits
+};
 
-  if (req.file) {
-    fieldsToUpdate.img = "images/" + req.file.filename;
-  }
+
+
 
   const result = await Animal.updateOne({ _id: req.params.id }, fieldsToUpdate);
   const animal = await Animal.findById(req.params.id);
   res.send(animal);
 };
 
-app.delete("/api/animals/:id", upload.single("img"), (req, res) => {
+app.delete("/api/animals/:id", (req, res) => {
   console.log(`Received DELETE request to /api/animals/${req.params.id}`);
   removeAnimal(res, req.params.id);
 });
@@ -159,13 +153,13 @@ const removeAnimal = async (res, id) => {
 
 const validateAnimal = (animal) => {
   const schema = Joi.object({
-    _id: Joi.allow(""),
     name: Joi.string().min(3).required(),
-    date: Joi.string().min(3).required(),
-    authenticity: Joi.string().required(),
-    condition: Joi.allow(""),
-    description: Joi.allow(""),
-  });
+    species: Joi.string().required(),
+    habitat: Joi.string().required(),
+    description: Joi.string().required(),
+    traits: Joi.string().required()
+});
+
   console.log("Validating animal:", animal);
   return schema.validate(animal);
 };
